@@ -13,6 +13,10 @@
 		1E4A74561BE748020035ADF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E4A74541BE748020035ADF1 /* Main.storyboard */; };
 		1E4A74581BE748020035ADF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E4A74571BE748020035ADF1 /* Assets.xcassets */; };
 		1E4A745B1BE748020035ADF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E4A74591BE748020035ADF1 /* LaunchScreen.storyboard */; };
+		1E4A74681BE749CC0035ADF1 /* QYCarChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4A74671BE749CC0035ADF1 /* QYCarChooseView.m */; };
+		1E4A746D1BE749EC0035ADF1 /* QYCarViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4A746A1BE749EC0035ADF1 /* QYCarViewCell.m */; };
+		1E4A746E1BE749EC0035ADF1 /* LineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4A746C1BE749EC0035ADF1 /* LineLayout.m */; };
+		1E4A74711BE74A920035ADF1 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4A74701BE74A920035ADF1 /* UIViewExt.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		1E4A74571BE748020035ADF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E4A745A1BE748020035ADF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E4A745C1BE748020035ADF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E4A74661BE749CC0035ADF1 /* QYCarChooseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYCarChooseView.h; sourceTree = "<group>"; };
+		1E4A74671BE749CC0035ADF1 /* QYCarChooseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYCarChooseView.m; sourceTree = "<group>"; };
+		1E4A74691BE749EC0035ADF1 /* QYCarViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYCarViewCell.h; sourceTree = "<group>"; };
+		1E4A746A1BE749EC0035ADF1 /* QYCarViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYCarViewCell.m; sourceTree = "<group>"; };
+		1E4A746B1BE749EC0035ADF1 /* LineLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineLayout.h; sourceTree = "<group>"; };
+		1E4A746C1BE749EC0035ADF1 /* LineLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineLayout.m; sourceTree = "<group>"; };
+		1E4A746F1BE74A920035ADF1 /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
+		1E4A74701BE74A920035ADF1 /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 		1E4A744A1BE748020035ADF1 /* QYCarChooseAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				1E4A74651BE7499E0035ADF1 /* QYCarChooseView */,
 				1E4A744E1BE748020035ADF1 /* AppDelegate.h */,
 				1E4A744F1BE748020035ADF1 /* AppDelegate.m */,
 				1E4A74511BE748020035ADF1 /* ViewController.h */,
@@ -77,6 +90,21 @@
 				1E4A744C1BE748020035ADF1 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1E4A74651BE7499E0035ADF1 /* QYCarChooseView */ = {
+			isa = PBXGroup;
+			children = (
+				1E4A74661BE749CC0035ADF1 /* QYCarChooseView.h */,
+				1E4A74671BE749CC0035ADF1 /* QYCarChooseView.m */,
+				1E4A74691BE749EC0035ADF1 /* QYCarViewCell.h */,
+				1E4A746A1BE749EC0035ADF1 /* QYCarViewCell.m */,
+				1E4A746B1BE749EC0035ADF1 /* LineLayout.h */,
+				1E4A746C1BE749EC0035ADF1 /* LineLayout.m */,
+				1E4A746F1BE74A920035ADF1 /* UIViewExt.h */,
+				1E4A74701BE74A920035ADF1 /* UIViewExt.m */,
+			);
+			path = QYCarChooseView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +177,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E4A74711BE74A920035ADF1 /* UIViewExt.m in Sources */,
+				1E4A74681BE749CC0035ADF1 /* QYCarChooseView.m in Sources */,
 				1E4A74531BE748020035ADF1 /* ViewController.m in Sources */,
 				1E4A74501BE748020035ADF1 /* AppDelegate.m in Sources */,
+				1E4A746E1BE749EC0035ADF1 /* LineLayout.m in Sources */,
 				1E4A744D1BE748020035ADF1 /* main.m in Sources */,
+				1E4A746D1BE749EC0035ADF1 /* QYCarViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +294,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QYCarChooseAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qianye.QYCarChooseAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b077459b-b354-4a4d-9182-a6eef11eeb06";
 			};
 			name = Debug;
 		};
@@ -273,9 +307,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QYCarChooseAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qianye.QYCarChooseAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b077459b-b354-4a4d-9182-a6eef11eeb06";
 			};
 			name = Release;
 		};

@@ -1,20 +1,14 @@
-//
-//  ViewController.m
-//  QYCarChooseAnimation
-//
-//  Created by qianye on 15/11/2.
-//  Copyright © 2015年 qianye. All rights reserved.
-//
+## QYCarChooseAnimation
+* 一种3D选择车型（也可以是任意其他类型）的动画效果
 
-#import "ViewController.h"
-#import "QYCarChooseView.h"
+## 如何使用QYCarChooseAnimation
+* 将QYCarChooseView文件添加到项目中，导入头文件`#import "QYCarChooseView.h"`
 
-@interface ViewController ()<QYCarChooseDelegate>
-
-@end
-
-@implementation ViewController
-
+## 具体说明
+* 实现：使用了UICollectionView，以及官方提供的布局文件“LineLayout（有稍些修改）”主要用来实现3D滑动效果
+* 使用：
+* 
+```objc
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -38,15 +32,4 @@
     driverChooseView.carNameList = carTypeArray;
     [self.view addSubview:driverChooseView];
 }
-#pragma mark - 车辆选择代理方法
-- (void)showDetailCarTypeWithIndex:(int)index
-{
-    NSLog(@"%d",index);
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-@end
+```
